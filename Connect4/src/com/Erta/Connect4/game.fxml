@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootGrid" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Erta.Connect4.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="25.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="menuPane" GridPane.columnSpan="2" />
+      <Pane fx:id="gamePane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox fx:id="displayVbox" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="104.0" prefWidth="156.0" VBox.vgrow="ALWAYS" />
+            <Label fx:id="playerLabel" alignment="CENTER" prefHeight="43.0" prefWidth="235.0" text="Player One" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font></Label>
+            <Label fx:id="turnLabel" alignment="CENTER" prefHeight="38.0" prefWidth="231.0" text="Turn" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font></Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+    </children>
+</GridPane>
